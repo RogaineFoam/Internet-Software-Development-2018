@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="general.css" type="text/css">
+    <title>Request A Quote Page</title>
+</head>
+
+<body>
+<div class="mainHeader">
+    <h1>Request a Quote</h1>
+</div>
+<div class="mainNav">
+    <ul>
+        <li><a href="./homePage.html">Home Page</a></li>
+        <li><a href="requestQuote.html">Request a Quote</a></li>
+        <li><a>Account Info</a>
+            <ul>
+                <li><a href="clientInfo.html">Client Information</a></li>
+                <li><a href="modifyClient.html">Modify Current Client</a></li>
+                <li><a href="quoteHistory.html">Quote History</a></li>
+            </ul>
+        </li>
+        <li><a>About Us</a>
+            <ul>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="ourMission.html">Mission Statement</a></li>
+                <li><a href="socialMedia.html">Social Media</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+<div id="formMainContent">
+    <form id="mainForm">
+        <fieldset>
+            <legend><b> Please Enter the Information to Recieve your Quote </b></legend>
+            <label>Gallons Requested:</label>
+            <input id="gallonsRequested" type="text" name="double"> <br> <!-- TextBox Generation -->
+            <P id="gallonsError" class="errorMessage"></P>
+
+            <label>Delivery Date:</label>
+            <input id="deliveryDate" type="text" name="date"> <br> <!-- TextBox Generation -->
+            <P id="dDateError" class="errorMessage"></P>
+
+            <label>Delivery Location:</label>
+            <input id="deliveryLocation" type="text" name="string"> <br>
+            <P id="dLocationError" class="errorMessage"></P>
+
+            <label>Delivery Contact Person Name:</label>
+            <input id="deliveryContactPersonName" type="text" name="name"> <br>
+            <P id="dContactNameError" class="errorMessage"></P>
+
+            <label>Delivery Contact Person Phone:</label>
+            <input id="deliveryContactPersonPhone" type="text" name="phone"> <br>
+            <P id="dContactPhoneError" class="errorMessage"></P>
+
+            <label>Delivery Contact Person Email:</label>
+            <input id="deliveryContactPersonEmail" type="text" name="email"> <br>
+            <P id="dContactEmailError" class="errorMessage"></P>
+
+            <label>Suggested Price Per Gallon:</label>
+            <input id="suggestedPricePerGallon" type="text" name="double"> <br>
+            <P id="priceGalError" class="errorMessage"></P>
+
+            <label>Total Amount Due:</label>
+            <input id="totalAmountDue" type="text" name="double"> <br>
+            <P id="totAmtError" class="errorMessage"></P>
+
+            <input type="button" id="submit" value="Submit" onclick="createQuote()">
+
+
+            <p id="subStatus" class="errorMessage"></p>
+
+        </fieldset>
+    </form>
+</div>
+
+<footer class="mainFooter">
+    <ul>
+        <li><a href="contactUs.html">Contact Us</a></li>
+        <li><a href="./homePage.html">Home Page</a></li>
+        <li><a href="./clientInfo.html">Client Information</a></li>
+        <li><a href="./quoteHistory.html">Quote History</a></li>
+        <li><a href="socialMedia.html">Social Media</a></li>
+    </ul>
+    <p>Copyright &copy; 2018 Samuel Pugh, William Fallin. All rights reserved</p>
+
+    <script src="./controller.js" type="text/javascript">
+
+    </script>
+
+</footer>
+
+</body>
+
+</html>
